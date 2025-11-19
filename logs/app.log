@@ -1,8 +1,0 @@
-2025-11-18 21:17:25,985 - GET /
-2025-11-18 21:17:43,735 - GET /orders - /10
-2025-11-18 21:17:47,944 - GET /orders - /10
-2025-11-18 21:17:55,896 - GET /orders - /11
-2025-11-18 21:17:59,366 - GET /orders - /11
-2025-11-18 21:18:43,943 - GET /products - /, page: 1, category: cables, price_min: 1.0, price_max: 1000.0
-2025-11-18 21:18:49,267 - GET /products - /, page: 1, category: cables, price_min: 1.0, price_max: 1000.0
-2025-11-18 21:59:45,230 - GET /products - /, page: 1, category: cables, price_min: 1.0, price_max: 1000.0
