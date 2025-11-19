@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrderForm</class>
+ <widget class="QWidget" name="OrderForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create Order</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="customerGroup">
+     <property name="title">
+      <string>Покупатель</string>
+     </property>
+     <layout class="QFormLayout" name="formLayoutCustomer">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelCustomer">
+        <property name="text">
+         <string>Email / ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="customerSelect"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="productGroup">
+     <property name="title">
+      <string>Добавть продукт</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutProduct">
+      <item>
+       <layout class="QFormLayout" name="formLayoutProduct">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelProduct">
+          <property name="text">
+           <string>Продукт</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="productSelect"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelQty">
+          <property name="text">
+           <string>Кол-во</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="qtySpin">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addItemButton">
+        <property name="text">
+         <string>Добавить</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="itemsTable">
+     <column>
+      <property name="text">
+       <string>Продукт</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Кол-во</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Цена</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Итого</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutTotal">
+     <item>
+      <widget class="QLabel" name="labelTotalText">
+       <property name="text">
+        <string>Итог</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="totalAmountLabel">
+       <property name="text">
+        <string>0.00</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="createOrderButton">
+     <property name="text">
+      <string>Создать заказ</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
